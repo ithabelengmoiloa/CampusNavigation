@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Navigation</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+    <div id="container">
+        <h1>LIMKOKWING SMART CAMPUS NAVIGATION SYSTEM</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+   
+    <script>
+        const loginForm = document.getElementById("login-form");
+        const mapContainer = document.getElementById('map-container');
+
+        loginForm.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            loginForm.reset(); // Reset form fields
+            window.location.href = "map.html";
+            
+        });
+    </script>
+</body>
+</html>
+
